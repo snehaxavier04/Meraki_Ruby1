@@ -1,27 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+FRAMEWORK USED : 
+•	Docker: V19.03.0
+•	Ruby: 2.5.1
+•	Postgresql: 11
+•	SQLite: 3.1
+•	Nginx
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-* ...
-NGINX to build
+Step1 : Create docker image using the below command docker 
+		build -t Dockerfile.rails . 
+Step2 : Use above image to spin three nodes. 
+Step3 : Use the ngnix script to enable master and secondary node configuartion(nginx.conf)
 
-``` docker run --name mynginx -P -d NGINX```
+Test scripts: startup.sh
+
+
+Please refer to the attached word document fot additional information on technical details as to why the above frameworks were used and network topology. 
