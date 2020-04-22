@@ -10,9 +10,9 @@ FRAMEWORK USED :
 
 * Deployment instructions
 
-Step1 : Create docker image using the below command docker 
-		build -t Dockerfile.rails . 
-Step2 : Use above image to spin three nodes. 
+Step1 : Create docker image using the below command
+	docker build -t Dockerfile.rails.
+Step2 : Use above image to spin three nodes.
 Step3 : Use the ngnix script to enable master and secondary node configuartion(nginx.conf)
 
 Test scripts: startup.sh
